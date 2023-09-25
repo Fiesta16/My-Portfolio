@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Aayush</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c5e9e1e824.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header"> 
+    <div class="container">
+        <nav>
+            <!-- <img src="images/logo.png" class="logo"> -->
+            <a href="#header" class="logo-link"><h1 class="logo"> <span id="A">A</span>ayush</h1></a>
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href='#about'>About</a></li>
+                <li> <a href='#services'>Services</a></li>
+                <li> <a href='#portfolio'>Portfolio</a></li>
+                <li> <a href='#contact'>Contact</a></li>
+                <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Developer</p>
+            <h1>Hi, I'm<span> Aayush</span><br>Sharma from India</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------about -------------------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am Aayush Sharma and I live in Delhi,India. I am an aspiring
+                    developer pursuing my major in Information Technology from Guru Tegh Bahadur Institute of Technology, Delhi.
+                    I am a dedicated individual with diverse skill set. I have demonstrated my ability to lead teams.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link"onclick= "opentab('skills')" >Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Data structures & Algorithms using C++. Experience of C, Python, Javascript & various others</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <!-- <li><span>App Development</span><br>Building</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>MERN Stack Developer(Appypie LLP) </span><br>June 2023 - present</li>
+                        <li><span>Co-Founder (Invincibles Robotics) 2019-present</span><br>2019-present</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech(Information Technology)</span><br>Guru Tegh Bahadur Institute of Technology</li>
+                        <li><span>AISSCE</span><br>Ahlcon Public School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------------------------------services----------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web App Development</h2>
+                <p>Crafting dynamic and responsive web applications that empower target audiences, 
+                    streamline processes, and deliver seamless user experiences, 
+                    while leveraging the latest technologies and industry best practices.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Roboticist</h2>
+                <p>Creating robots that perform many different functions such as playing soccer, 
+                    a bot which can runs faster and Robowars bots which can withstand the opponent.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>uhdgjjs sfjsi ifis</p>
+                <a href="#">learn more</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!---------------------------------------------portfolio-------------------------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>Designed and developed a visually appealing personal portfolio web application. 
+                        The project aimed to showcase skills, experience, and projects effectively, providing a 
+                        user-friendly and interactive experience. Key features included responsive design, project 
+                        galleries, and a contact form for inquiries.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Home Decor</h3>
+                    <p>Home Décor clone is made using HTML, CSS, BootStrap.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Speed Typing Website</h3>
+                    <p>Typing Speed Website is made using HTML, CSS, JavaScript. It lets you know your typing speed</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------------------------------contact--------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>aayushhsharmaa@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9311447262</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
